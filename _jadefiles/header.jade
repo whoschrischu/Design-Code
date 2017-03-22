@@ -1,0 +1,23 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#projects") Projects
+    li: a(href="#development") Development
+    li: a(href="#photography") Photography
+    li: a(href="#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+
+header
+  .header-position
+    h1.logo Chris Chu
+
+    nav.site-nav
+      +nav-content()
+      
+    a(href="mailto:chuchris00@gmail.com").email-link +email me    
+
+    .mobile-nav-toggle: span
+    
